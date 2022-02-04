@@ -1,0 +1,136 @@
+# Parameters of the base problem
+param total_surface := 13068000; # 11979000 if 275 acres
+param outside_parking_size := 200;
+param max_parking_space := 653400;
+param N_MAX = 10000;
+
+param quotas_series :=
+MIN 0.15
+MAX 0.35;
+
+param quotas_models :=
+MIN 0.2
+MAX 0.35;
+
+param max_quotas_grandcypress_premium := 0.25;
+param max_quotas_bayview_premium := 0.25;
+param max_quotas_two_stories := 0.7;
+
+
+# New parameters
+param tax_rate := 0.08;
+param sport_extra_cost := 8000000;
+param sport_space_loss := 435600;
+
+
+param profit := # Base problem parameter
+'The Trump' 154000
+'The Vanderbilt' 149600
+'The Hughes' 143000
+'The Jackson' 129800
+'The Trump Lake' 211200
+'The Vanderbilt Lake' 205480
+'The Hughes Lake' 196900
+'The Jackson Lake' 179740
+'Grand Cypress' 75600
+'Grand Cypress Premium' 82800
+'Lazy Oak' 68400
+'Wind Row' 57600
+'Orangewood' 50400
+'Bayview' 60000
+'Bayview Premium' 66000
+'Storeline' 54000
+'Docks Edge' 48000
+'Golden Pier' 40000
+'Country Stream' 55000
+'Weeping Willow' 40000
+'Picket Fence' 35000;
+
+param extra_profit := # New parameter to compute extra profit if the sport field is built
+'The Trump' 7700
+'The Vanderbilt' 7480
+'The Hughes' 7150
+'The Jackson' 6490
+'The Trump Lake' 10560
+'The Vanderbilt Lake' 10274
+'The Hughes Lake' 9845
+'The Jackson Lake' 8987
+'Grand Cypress' 2268
+'Grand Cypress Premium' 2484
+'Lazy Oak' 2052
+'Wind Row' 1728
+'Orangewood' 1512
+'Bayview' 1200
+'Bayview Premium' 1320
+'Storeline' 1080
+'Docks Edge' 960
+'Golden Pier' 1200
+'Country Stream' 1650
+'Weeping Willow' 1200
+'Picket Fence' 1050;
+
+param selling_price := # New parameter to compute the new tax rate on the selling price
+'The Trump' 700000
+'The Vanderbilt' 680000
+'The Hughes' 650000
+'The Jackson' 590000
+'The Trump Lake' 960000
+'The Vanderbilt Lake' 934000
+'The Hughes Lake' 895000
+'The Jackson Lake' 817000
+'Grand Cypress' 420000
+'Grand Cypress Premium' 460000
+'Lazy Oak' 380000
+'Wind Row' 320000
+'Orangewood' 280000
+'Bayview' 300000
+'Bayview Premium' 330000
+'Storeline' 270000
+'Docks Edge' 240000
+'Golden Pier' 200000
+'Country Stream' 220000
+'Weeping Willow' 160000
+'Picket Fence' 140000;
+
+param size := # Base problem parameter
+'The Trump' 23180
+'The Vanderbilt' 22980
+'The Hughes' 22980
+'The Jackson' 22780
+'The Trump Lake' 23180
+'The Vanderbilt Lake' 22980
+'The Hughes Lake' 22980
+'The Jackson Lake' 22780
+'Grand Cypress' 6850
+'Grand Cypress Premium' 12090
+'Lazy Oak' 6100
+'Wind Row' 5556
+'Orangewood' 5556
+'Bayview' 5756
+'Bayview Premium' 8660
+'Storeline' 5556
+'Docks Edge' 5556
+'Golden Pier' 5556
+'Country Stream' 3100
+'Weeping Willow' 2900
+'Picket Fence' 2900;
+
+param outside_parking_spots := # Base problem parameter
+'The Trump' 2
+'The Vanderbilt' 1
+'The Hughes' 1
+'The Trump Lake' 2
+'The Vanderbilt Lake' 1
+'The Hughes Lake' 1
+'Grand Cypress' 1
+'Grand Cypress Premium' 1
+'Lazy Oak' 2
+'Wind Row' 1
+'Orangewood' 1
+'Bayview' 2
+'Bayview Premium' 2
+'Storeline' 1
+'Docks Edge' 1
+'Country Stream' 3
+'Weeping Willow' 2
+'Picket Fence' 2;

@@ -1,0 +1,90 @@
+param total_surface := 13068000; # 11979000 if 275 acres
+param outside_parking_size := 200;
+param max_parking_space := 653400;
+
+
+param profit :=
+'The Trump' 154000
+'The Vanderbilt' 149600
+'The Hughes' 143000
+'The Jackson' 129800
+'The Trump Lake' 211200
+'The Vanderbilt Lake' 205480
+'The Hughes Lake' 196900
+'The Jackson Lake' 179740
+'Grand Cypress' 75600
+'Grand Cypress Premium' 82800
+'Lazy Oak' 68400
+'Wind Row' 57600
+'Orangewood' 50400
+'Bayview' 60000
+'Bayview Premium' 66000
+'Storeline' 54000
+'Docks Edge' 48000
+'Golden Pier' 40000
+'Country Stream' 55000
+'Weeping Willow' 40000
+'Picket Fence' 35000;
+
+param size :=
+'The Trump' 23180
+'The Vanderbilt' 22980
+'The Hughes' 22980
+'The Jackson' 22780
+'The Trump Lake' 23180
+'The Vanderbilt Lake' 22980
+'The Hughes Lake' 22980
+'The Jackson Lake' 22780
+'Grand Cypress' 6850
+'Grand Cypress Premium' 12090
+'Lazy Oak' 6100
+'Wind Row' 5556
+'Orangewood' 5556
+'Bayview' 5756
+'Bayview Premium' 8660
+'Storeline' 5556
+'Docks Edge' 5556
+'Golden Pier' 5556
+'Country Stream' 3100
+'Weeping Willow' 2900
+'Picket Fence' 2900;
+
+param outside_parking_spots :=
+'The Trump' 2
+'The Vanderbilt' 1
+'The Hughes' 1
+'The Trump Lake' 2
+'The Vanderbilt Lake' 1
+'The Hughes Lake' 1
+'Grand Cypress' 1
+'Grand Cypress Premium' 1
+'Lazy Oak' 2
+'Wind Row' 1
+'Orangewood' 1
+'Bayview' 2
+'Bayview Premium' 2
+'Storeline' 1
+'Docks Edge' 1
+'Country Stream' 3
+'Weeping Willow' 2
+'Picket Fence' 2;
+
+param quotas_bedrooms: MIN MAX :=
+2 0.15 0.25
+3 0.25 0.4
+4 0.25 0.4
+5 0.05 0.15;
+
+param quotas_series :=
+MIN 0.15
+MAX 0.35;
+
+param quotas_models :=
+MIN 0.2
+MAX 0.35;
+
+param max_quotas_grandcypress_premium := 0.25;
+param max_quotas_bayview_premium := 0.25;
+param max_quotas_two_stories := 0.7;
+param min_quotas_affordability := 0.15;
+
